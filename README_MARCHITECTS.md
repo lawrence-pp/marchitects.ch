@@ -18,8 +18,10 @@ Changes are deployed whenever they are merged into the main branch.
 
 ## Development
 
+`hs --mode=draft watch ./src  marchitects.ch`
+
 Local development in a Hubspot context means that you upload your local files to Hubspot and use your Hubspot account to preview your page. 
-In our setup we automatically sync our local code with Hupspot, i.e. you can view the updated files in Hubpsot Design Manager. To avoid to immediately publish changes, we run the Huspot watch command in draft mode: `hs watch --mode=draft . marchitects.ch`.
+In our setup we automatically sync our local code with Hupspot, i.e. you can view the updated files in Hubpsot Design Manager. To avoid to immediately publish changes, we run the Hubspot watch command in draft mode: `hs --mode=draft watch ./src  marchitects.ch`.
 
 Changes can be published either manually (publish button in Hubspot) or via GitHub actions by pushing to the main branch.
 
